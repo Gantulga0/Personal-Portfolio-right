@@ -12,21 +12,26 @@ body {
     padding-inline: 10%;
 }
 
+.rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .navbar {
     display: flex;
     box-sizing: border-box;
     width: 100%;
     justify-content: space-between;
-    border: 1px solid red;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
 .navbar-logo {
     display: flex;
-    font-family: Rubik Mono One;
+    font-family: "Rubik Mono One";
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 1000;
     line-height: 36px;
     text-align: center;
 }
@@ -34,7 +39,7 @@ body {
 .navbar-right {
     display: flex;
     align-items: center;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -52,7 +57,7 @@ body {
     width: 36px;
 }
 
-.cv{
+.cv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,17 +69,75 @@ body {
     color: #F9FAFB;
 }
 
-.navbar-menu{
+.navbar-menu {
     display: none;
 
 }
-@media (max-width: 768px){
-    .navbar-right{
+
+@media (max-width: 768px) {
+    .navbar-right {
         display: none;
     }
-    .navbar-menu{
+
+    .navbar-menu {
         display: flex;
         align-items: center;
     }
 }
 
+.header {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.header-text {
+    width: 50%;
+}
+
+.header-text-title {
+    font-family: "Inter";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111827;
+    margin-bottom: 1%;
+}
+
+.header-text-main {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4B5563;
+    margin-bottom: 6%;
+}
+
+.location-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    color: #4B5563;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.icons{
+    width: 36px;
+    height: 36px;
+
+}
