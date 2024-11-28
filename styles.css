@@ -25,6 +25,7 @@ body {
     justify-content: space-between;
     margin-top: 16px;
     margin-bottom: 16px;
+
 }
 
 .navbar-logo {
@@ -46,15 +47,30 @@ body {
     text-align: left;
     color: #4B5563;
     gap: 24px;
+    cursor: pointer;
+}
+
+.navbar-right-text:hover {
+    color: rgb(109, 192, 255);
+    transition: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .sun {
     display: flex;
 }
 
+.sun:hover {
+    background-color: #111827;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+    border-radius: 50%;
+}
+
 .sun-img {
     height: 36px;
     width: 36px;
+    cursor: pointer;
 }
 
 .cv {
@@ -67,6 +83,14 @@ body {
     border-radius: 12px;
     background-color: #111827;
     color: #F9FAFB;
+    cursor: pointer;
+}
+
+.cv:hover {
+    background-color: rgb(109, 192, 255);
+    color: black;
+    transition: ease-in-out;
+    transition-duration: 0.2s;
 }
 
 .navbar-menu {
@@ -151,55 +175,7 @@ body {
     background-color: #E5E7EB;
 }
 
-@media (max-width: 768px) {
-    .navbar-right {
-        display: none;
-    }
 
-    .navbar-menu {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .header {
-        display: flex;
-        justify-content: center;
-    }
-
-    .header-text {
-        width: 100%;
-        margin-top: 15%;
-    }
-
-    .header-text-title {
-        font-size: 36px;
-        line-height: 40px;
-
-    }
-
-    .header-text-main {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    #image-background {
-        width: 320px;
-        height: 320px;
-        margin-top: 40px;
-        margin-left: -20px;
-    }
-
-    .main-info {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .info-image{
-        width: 100%;
-        height: 100%;
-    }
-}
 
 .second-section {
     width: 100%;
@@ -209,13 +185,7 @@ body {
     align-items: center;
 }
 
-.info-image {
-    width: 20%;
-    height: 40%;
-    border: 8px solid white;
-    position: absolute;
-    margin-left: 40px;
-}
+
 
 .my-info {
     display: flex;
@@ -247,6 +217,7 @@ body {
 
 .main-info-img {
     width: 50%;
+    position: relative;
 }
 
 .main-info-text {
@@ -265,9 +236,19 @@ body {
     display: flex;
 }
 
+.info-image {
+    width: 20vw;
+    border: 8px solid white;
+    position: absolute;
+    margin-left: 40px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
 #main-info-image-background {
-    width: 400px;
-    height: 480px;
+    width: 20vw;
+    height: 40vh;
     margin-top: 40px;
     border: 8px solid white;
     background-color: #E5E7EB;
@@ -321,7 +302,6 @@ body {
 .my-skills {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin-top: 48px;
     margin-left: 32px;
     margin-right: 32px;
@@ -329,9 +309,10 @@ body {
 
 .my-skills-first {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 87px;
-    margin-bottom: 48px;
+    gap: 9%;
+    margin-bottom: 5%;
 }
 
 .my-skills-mini {
@@ -339,8 +320,497 @@ body {
     flex-direction: column;
 }
 
-.my-skills-second {
+.section-4 {
+    width: 100%;
+    background-color: #F9FAFB;
     display: flex;
-    gap: 87px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-4-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-4-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 28px;
+    padding: 4px 20px 4px 20px;
+    gap: 0px;
+    border-radius: 12px;
+    background-color: #E5E7EB;
+    margin-bottom: 15%;
+}
+
+.section-4-text {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 48px;
+}
+
+.section-4-tab {
+    background-color: #FFFFFF;
+    padding: 32px;
+    width: 70%;
+    box-shadow: 0px 2px 2px 0px #0000000F;
+    box-shadow: 0px 4px 3px 0px #00000012;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.section-4-tab:hover {
+    border: 2px solid rgb(109, 192, 255);
+    transition: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.section-4-tab-main {
+    display: flex;
     justify-content: space-between;
+}
+
+.section-4-tab-main-title {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.section-4-tab-sub-title {
+    font-family: "Inter";
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1, 5em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #4B5563;
+    margin-left: 1%;
+}
+
+.section-4-experience-time {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #374151;
+    display: flex;
+}
+
+.section-5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-5-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-5-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-5-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 28px;
+    padding: 4px 20px 4px 20px;
+    gap: 0px;
+    border-radius: 12px;
+    background-color: #E5E7EB;
+    margin-bottom: 15%;
+}
+
+.section-5-tab {
+    display: flex;
+    margin-inline: 10%;
+    box-shadow: 0px 2px 2px 0px #0000000F;
+    box-shadow: 0px 4px 3px 0px #00000012;
+    margin-bottom: 5%;
+}
+
+.section-5-text {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 15%;
+}
+
+.section-5-tab-picture {
+    background-color: #F9FAFB;
+    border-radius: 5px;
+    padding: 5%;
+    width: 50%;
+}
+
+.section-5-tab-picture2 {
+    background-color: #F9FAFB;
+    border-radius: 5px;
+    padding: 5%;
+    width: 50%;
+    display: none;
+}
+
+.section-5-tab-picture3 {
+    background-color: #F9FAFB;
+    border-radius: 5px;
+    padding: 5%;
+    width: 50%;
+}
+
+.section-5-tab-main {
+    width: 50%;
+    padding: 48px;
+}
+
+.section-5-main-title {
+    font-family: "Inter";
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.section-5-main-text {
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #4B5563;
+    margin-bottom: 5%;
+}
+
+.section-5-main-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-5-main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px 4px 20px;
+    gap: 0px;
+    border-radius: 12px;
+    background-color: #E5E7EB;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.section-5-main-logo:hover {
+    background-color: rgb(109, 192, 255);
+    color: #374151;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.section-5-share-button {
+    margin-top: 5%;
+}
+
+.section-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-6-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-6-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px 4px 20px;
+    gap: 0px;
+    border-radius: 12px;
+    background-color: #E5E7EB;
+    color: #4B5563;
+    width: 8%;
+    margin-bottom: 1%;
+}
+
+.section-6-title {
+    width: 50%;
+    font-family: "Inter";
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #4B5563;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.section-6-mail {
+    display: flex;
+    align-items: center;
+    font-family: "Inter";
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+.section-6-mail:hover {
+    color: rgb(109, 192, 255);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.section-6-phone {
+    display: flex;
+    align-items: center;
+    font-family: "Inter";
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-6-phone:hover {
+    color: rgb(109, 192, 255);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.section-6-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "Inter";
+    font-size: 1em;
+    font-weight: 400;
+    color: #4B5563;
+}
+
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-text {
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .header-text-title {
+        font-size: 36px;
+        line-height: 40px;
+
+    }
+
+    .header-text-main {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #image-background {
+        width: 320px;
+        height: 320px;
+        margin-top: 40px;
+        margin-left: -20px;
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-image {
+        object-fit: cover;
+        width: 80%;
+        height: 95%;
+    }
+
+    .main-info-img {
+        width: 100%;
+    }
+
+    #main-info-image-background {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .main-info-text {
+        width: 100%;
+    }
+
+    .skills-text {
+        margin-bottom: 5%;
+    }
+
+    .my-skills {
+        margin: 0;
+    }
+
+    .my-skills-first {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10%;
+        margin-bottom: 5%;
+    }
+
+    .my-skills-mini {
+        margin-bottom: 5%;
+    }
+
+    .section-4-tab {
+        display: flex;
+        width: 100%;
+    }
+
+    .section-4-tab-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-4-tab-main-title {
+        margin-top: 5%;
+    }
+
+    .section-5-tab {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-5-tab-main {
+        width: 100%;
+    }
+
+    .section-5-tab-picture {
+        width: 100%;
+    }
+
+    .section-5-tab-picture2 {
+        width: 100%;
+        display: flex;
+    }
+
+    .section-5-tab-picture3 {
+        width: 100%;
+        display: none;
+    }
+
+    .section-6-logo {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+
+    .section-6-main {
+        width: 100%;
+    }
+
+    .section-6-title {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .section-6-mail {
+        width: 100%;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-6-phone {
+        width: 100%;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+
+    .section-6-icons {
+        margin-top: 5%;
+    }
+
+    .footer {
+        padding: 5%;
+    }
 }
