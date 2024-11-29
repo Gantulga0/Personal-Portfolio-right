@@ -1,6 +1,32 @@
+:root {
+    --bg-color: #ffffff;
+    --bg-color-2: #F9FAFB;
+    --bg-color-logos: #E5E7EB;
+    --bg-color-tab: #ffffff;
+    --text-color: #000000;
+    --text-color-2: #4B5563;
+}
+
+[data-theme="light"] {
+    --bg-color: #000000;
+    --bg-color-2: #111827;
+    --bg-color-logos: #374151;
+    --bg-color-tab: #1F2937;
+    --text-color: #ffffff;
+    --text-color-2: #D1D5DB;
+}
+
 body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
 }
 
 * {
@@ -45,7 +71,7 @@ body {
     font-weight: 500;
     line-height: 24px;
     text-align: left;
-    color: #4B5563;
+    color: var(--text-color-2);
     gap: 24px;
     cursor: pointer;
 }
@@ -60,19 +86,6 @@ body {
     display: flex;
 }
 
-.sun:hover {
-    background-color: #111827;
-    transition: ease-in-out;
-    transition-duration: 0.2s;
-    border-radius: 50%;
-}
-
-.sun-img {
-    height: 36px;
-    width: 36px;
-    cursor: pointer;
-}
-
 .cv {
     display: flex;
     justify-content: center;
@@ -81,8 +94,8 @@ body {
     height: 36px;
     padding: 6px 16px 6px 16px;
     border-radius: 12px;
-    background-color: #111827;
-    color: #F9FAFB;
+    background-color: var(--text-color);
+    color: var(--bg-color);
     cursor: pointer;
 }
 
@@ -119,7 +132,7 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #111827;
+    color: var(--text-color);
     margin-bottom: 1%;
 }
 
@@ -131,7 +144,7 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #4B5563;
+    color: var(--text-color-2);
     margin-bottom: 6%;
 }
 
@@ -139,7 +152,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 1%;
-    color: #4B5563;
+    color: var(--text-color-2);
     font-family: "Inter";
     font-size: 16px;
     font-weight: 400;
@@ -171,15 +184,16 @@ body {
     height: 320px;
     margin-top: 40px;
     margin-left: 40px;
-    border: 8px solid white;
-    background-color: #E5E7EB;
+    border: 8px solid var(--bg-color);
+    background-color: var(--bg-color-logos);
 }
 
 
 
 .second-section {
     width: 100%;
-    background-color: #F9FAFB;
+    background-color: var(--bg-color-2);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +220,7 @@ body {
     padding: 4px 20px 4px 20px;
     gap: 0px;
     border-radius: 12px;
-    background-color: #E5E7EB;
+    background-color: var(--bg-color-logos);
     margin-bottom: 48px;
 }
 
@@ -232,13 +246,13 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: #4B5563;
+    color: var(--text-color-2);
     display: flex;
 }
 
 .info-image {
     width: 20vw;
-    border: 8px solid white;
+    border: 8px solid var(--bg-color);
     position: absolute;
     margin-left: 40px;
     z-index: 0;
@@ -250,11 +264,12 @@ body {
     width: 20vw;
     height: 40vh;
     margin-top: 40px;
-    border: 8px solid white;
-    background-color: #E5E7EB;
+    border: 8px solid var(--bg-color);
+    background-color: var(--bg-color-logos);
 }
 
 .section-3 {
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -274,7 +289,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E5E7EB;
+    background-color: var(--bg-color-logos);
     width: 65px;
     height: 20px;
     border-radius: 12px;
@@ -282,7 +297,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    color: #4B5563;
+    color: var(--text-color-2);
 }
 
 .skills-text {
@@ -322,7 +337,7 @@ body {
 
 .section-4 {
     width: 100%;
-    background-color: #F9FAFB;
+    background-color: var(--bg-color-2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +369,7 @@ body {
     padding: 4px 20px 4px 20px;
     gap: 0px;
     border-radius: 12px;
-    background-color: #E5E7EB;
+    background-color: var(--bg-color-logos);
     margin-bottom: 15%;
 }
 
@@ -370,7 +385,7 @@ body {
 }
 
 .section-4-tab {
-    background-color: #FFFFFF;
+    background-color: var(--bg-color-tab);
     padding: 32px;
     width: 70%;
     box-shadow: 0px 2px 2px 0px #0000000F;
@@ -408,7 +423,7 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #4B5563;
+    color: var(--text-color-2);
     margin-left: 1%;
 }
 
@@ -457,7 +472,7 @@ body {
     padding: 4px 20px 4px 20px;
     gap: 0px;
     border-radius: 12px;
-    background-color: #E5E7EB;
+    background-color: var(--bg-color-logos);
     margin-bottom: 15%;
 }
 
@@ -481,14 +496,14 @@ body {
 }
 
 .section-5-tab-picture {
-    background-color: #F9FAFB;
+    background-color: var(--bg-color-logos);
     border-radius: 5px;
     padding: 5%;
     width: 50%;
 }
 
 .section-5-tab-picture2 {
-    background-color: #F9FAFB;
+    background-color: var(--bg-color-logos);
     border-radius: 5px;
     padding: 5%;
     width: 50%;
@@ -496,7 +511,7 @@ body {
 }
 
 .section-5-tab-picture3 {
-    background-color: #F9FAFB;
+    background-color: var(--bg-color-logos);
     border-radius: 5px;
     padding: 5%;
     width: 50%;
@@ -505,6 +520,7 @@ body {
 .section-5-tab-main {
     width: 50%;
     padding: 48px;
+    background-color: var(--bg-color-tab);
 }
 
 .section-5-main-title {
@@ -522,7 +538,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-    color: #4B5563;
+    color: var(--text-color-2);
     margin-bottom: 5%;
 }
 
@@ -538,7 +554,7 @@ body {
     padding: 4px 20px 4px 20px;
     gap: 0px;
     border-radius: 12px;
-    background-color: #E5E7EB;
+    background-color: var(--bg-color-logos);
     font-family: "Inter";
     font-size: 14px;
     font-weight: 500;
@@ -582,8 +598,8 @@ body {
     padding: 4px 20px 4px 20px;
     gap: 0px;
     border-radius: 12px;
-    background-color: #E5E7EB;
-    color: #4B5563;
+    background-color: var(--bg-color-logos);
+    color: var(--text-color-2);
     width: 8%;
     margin-bottom: 1%;
 }
@@ -594,7 +610,7 @@ body {
     font-size: 1.5em;
     font-weight: 400;
     line-height: 1em;
-    color: #4B5563;
+    color: var(--text-color-2);
     text-align: center;
     margin-bottom: 2%;
 }
@@ -653,7 +669,11 @@ body {
     font-family: "Inter";
     font-size: 1em;
     font-weight: 400;
-    color: #4B5563;
+    color: var(--text-color-2);
+}
+
+.main-footer {
+    background-color: var(--bg-color-logos);
 }
 
 @media (max-width: 768px) {

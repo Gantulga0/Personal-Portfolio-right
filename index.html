@@ -35,9 +35,17 @@
                 border: 1px 0px 0px 0px;
                 opacity: 0px;
                 rotate: 90deg;">
-                <div class="sun">
-                    <img class="sun-img" src="/images/Icon Button.png" alt="">
-                </div>
+                <button class="sun" id="toggle-button">
+                    <div id="light-mode" style="display: flex;"> <img style="
+
+                        height: 36px;
+                        width: 36px;
+                        cursor: pointer;" src="/images/Icon Button.png" alt=""></div>
+                    <div id="dark-mode" style="display: none;"> <img style="
+                        height: 36px;
+                        width: 36px;
+                        cursor: pointer;" src="/images/moon.png" alt=""></div>
+                </button>
                 <div class="cv">Download CV</div>
             </div>
             <div class="navbar-menu">
@@ -76,7 +84,7 @@
             </div>
             <div class="profile-container">
                 <div class="profile">
-                    <img style="width: 280px; height: 320px; border: 8px solid white; position: absolute;"
+                    <img style="width: 280px; height: 320px;border: 8px solid var(--bg-color); position: absolute;"
                         src="https://s3-alpha-sig.figma.com/img/f3c0/0e99/fcbb58c0fdf3c59259201153876040ea?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pXgkrvoiAAKHovh6Hu4yQOmretz7xvLsjLdZE72diWXvulVla0159jXEcvtg2FO00B9MQbl1vZMnB3TOCefTFBhc-e-O9Y1g7psRwN1zxq0GunkkNNvsRjwP2jx3-iMFRTzpa~dnXFDuf8wYyg-~of00-Y-fPly~PiS7TmnV7ZQXifN0uTkgVp-N7XSasS2UP868NuSkYMGqAUCokRfHEJluWa3tvvApYJvR3GJ-dhizJ7K2kZPGSgMbKYc5Wfq-HTbjkg5rsuNl-oD3MJhM1WsakPW6MfRImWaCQegzEQfmdJQB-BDn1754BiGv4Nw86p1QgnUwLfhoTCFqePnG5A__"
                         alt="">
                     <div id="image-background"></div>
@@ -410,9 +418,7 @@
                 </div>
                 <div class="section-5-tab">
                     <div class="section-5-tab-picture">
-                        <img style=" width: 100%;"
-                            src="images/tab-5-picture.png"
-                            alt="">
+                        <img style=" width: 100%;" src="images/tab-5-picture.png" alt="">
                     </div>
                     <div class="section-5-tab-main">
                         <div class="section-5-main-title">
@@ -468,7 +474,8 @@
                     Get in touch
                 </div>
                 <div class="section-6-title">
-                    What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
+                    What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply
+                    want to connect.
                 </div>
                 <div class="section-6-mail">
                     <img src="images/mail.png" alt="">
@@ -498,11 +505,12 @@
             </div>
         </div>
     </main>
-    <footer style="background-color: #F9FAFB;">
+    <footer class="main-footer">
         <div class="footer">
             2024 | Greetings with ❤️️ from Ulaanbaatar
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
