@@ -29,6 +29,10 @@ button {
     background: none;
 }
 
+li {
+    list-style: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -104,6 +108,58 @@ button {
     color: black;
     transition: ease-in-out;
     transition-duration: 0.2s;
+}
+
+.off-screen-menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.off-screen-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    font-family: "Rubik Mono One";
+    font-size: 30px;
+    font-weight: 1000;
+    line-height: 36px;
+    text-align: center;
+}
+.off-screen-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+.off-screen-last {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.off-screen-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.off-screen-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    padding: 6px 16px 6px 16px;
+    border-radius: 12px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    cursor: pointer;
 }
 
 .navbar-menu {
@@ -685,6 +741,13 @@ button {
         display: flex;
         align-items: center;
         cursor: pointer;
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
     }
 
     .header {
